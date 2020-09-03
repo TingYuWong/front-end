@@ -1,0 +1,171 @@
+html{
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+}
+
+body{
+	margin:0;
+	width: 100%;
+	height: 100%;
+	/*background-color: #f7ede2;*/
+	background-image: url('galaxy.jpg');
+	background:-webkit-linear-gradient(top, #ffffff, #fff3b0);
+	/*background: pink;*/
+}
+
+#todoList{
+	box-sizing: border-box;
+	/*border: solid 2px #4361ee;*/
+	width: 400px;
+	height: 75%;
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	transform: translateX(-198px);
+
+}
+
+#title{
+	background-color: #4361ee;
+	height: 10%;
+	color: #f0efeb;
+	font-size: 33px;
+	font-weight: 700;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+
+}
+
+#todo{
+	flex-grow: 9;
+
+}
+
+#add{
+	flex-grow: 1;
+}
+
+#addTodo{
+	background-color: #b8f2e6;
+	height: 10%;
+}
+
+input{
+	font-size: 15px;
+	border:none;
+	padding-left: 20px;
+	background-color: #b8f2e6;
+	width: 90%;
+	height: 90%;
+	color: #4361ee;
+	font-family: 'Montserrat', sans-serif;
+	outline: none;
+	
+
+}
+
+#content{
+	height: 80%;
+	/*will need this when add trash can icon*/
+	overflow-x: hidden;
+}
+
+.items{
+	height: 10%;
+	width: 115%;
+	display: flex;
+	transition: 0.45s ease-in-out;
+	transform:translateX(-60px);
+	
+}
+
+.list{
+	box-sizing: border-box;
+	padding-top: 1.8%;
+	padding-left: 20px;
+	color: #4361ee;
+	width: 400px;
+	height: 100%;
+	font-size: 15px;
+	font-weight: 800;
+	
+}
+
+.items:nth-child(even){
+	background-color:  #b8f2e6;
+
+}
+
+.items:nth-child(odd){
+	background-color:  #eff7f6;
+
+}
+
+.trashCan{
+	width:60px;
+	height: 100%;
+	background-color: #e63946;
+	transition: 1s;
+	position: relative;
+	cursor: pointer;
+}
+
+.fa-trash-o{
+	position: absolute;
+	top: 12px;
+	left: 21px;
+	color: white;
+}
+
+
+.items:hover{
+	transform:translateX(0px);
+}
+
+.done{
+	text-decoration: line-through;
+}
+
+.none{
+	display: none;
+}
+
+.circle{
+	border-radius:100%;
+	transition: 1s;
+}
+
+.circle:active{
+	transform: translate(0.5rem,0.5rem); 
+
+}
+
+
+.circle1{
+	width: 200px;
+	height: 200px;
+	background-color: #8338ec;
+	transform: translate(60px,600px); 
+}
+
+.circle2{
+	width: 400px;
+	height: 400px;
+	background-color: #fb5607;
+	transform: translate(1200px,-100px);
+}
+
+.circle3{
+	width: 200px;
+	height: 200px;
+	background-color: #ff006e;
+	transform: translate(200px,-700px);
+}
+
+
+
+
+

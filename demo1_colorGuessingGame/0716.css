@@ -1,0 +1,73 @@
+#header{
+	background-color: #e63462;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	text-transform: uppercase;
+	transition: 1s;
+}
+
+#controlBar{
+	background-color: #d9c5b2;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#reset,#hintMes,#easy,#hard{
+	font-size: 15px;
+	margin-top: 3px;
+}
+
+#reset:hover{
+	color: #e63462;
+	cursor: pointer;
+}
+
+#easy:hover{
+	color: #e63462;
+	cursor: pointer;
+}
+
+#hard:hover{
+	color: #e63462;
+	cursor: pointer;
+}
+
+
+#hintMes{
+	color:#e63462;
+	font-weight: 800;
+}
+
+#colorPalette{
+	margin-top: 20px;
+}
+
+.colorBlock{
+	border-radius: 15px;
+	margin-top: 20px;
+	height:100px;
+	opacity: 1;
+	transition: 1s;
+}
+
+.hide{
+	transition: 1s;
+	opacity: 0;
+}
+
+.none{
+	display: none;
+}
+
+.selected{
+	background: #F0EDEE;
+	color:#4e4c67;
+}
+
+@media (max-width: 450px){
+	#rgbTitle{
+		font-size: 40px;
+	}
+}
